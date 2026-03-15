@@ -25,3 +25,14 @@ jobs:
           -scheme WordScramble \
           -destination 'generic/platform=iOS Simulator' \
           clean build
+      - name: Run Tests
+        run: |
+          cd SampleApps/WordScramble/WordScramble
+          xcodebuild \
+          -project WordScramble.xcodeproj \
+          -scheme WordScramble \
+          -destination 'generic/platform=iOS Simulator' \
+          -enableCodeCoverage YES \
+          test
+          
+          
