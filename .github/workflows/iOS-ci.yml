@@ -21,6 +21,7 @@ jobs:
         run: |
           cd SampleApps/WordScramble
           xcodebuild \
+          -project WordScramble.xcodeproj \
           -scheme WordScramble \
           -destination 'platform=iOS Simulator,name=iPhone 15' \
           clean build
