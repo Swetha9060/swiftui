@@ -19,6 +19,7 @@ jobs:
 
       - name: Build project
         run: |
+          cd SampleApps/WordScramble
           xcodebuild \
           -scheme WordScramble \
           -destination 'platform=iOS Simulator,name=iPhone 15' \
