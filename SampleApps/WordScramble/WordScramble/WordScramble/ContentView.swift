@@ -44,7 +44,8 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
 
         // exit if the remaining string is empty
-        guard answer.count > 0 else {
+        guard answer.count >= 3 else {
+            wordError(title: "word too short", message: "use words with atleast 3 letters")
             return
         }
 
