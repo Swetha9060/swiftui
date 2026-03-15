@@ -23,5 +23,5 @@ jobs:
           xcodebuild \
           -project WordScramble.xcodeproj \
           -scheme WordScramble \
-          -destination 'platform=iOS Simulator' \
+          -destination 'generic/platform=iOS Simulator' \
           clean build
