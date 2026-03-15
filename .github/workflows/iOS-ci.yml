@@ -19,7 +19,7 @@ jobs:
 
       - name: Build project
         run: |
-          cd SampleApps/WordScramble
+          cd SampleApps/WordScramble/WordScramble
           xcodebuild \
           -project WordScramble.xcodeproj \
           -scheme WordScramble \
